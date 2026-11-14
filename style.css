@@ -1,0 +1,184 @@
+/* 変数の定義 */
+:root {
+  --meina-color: #9B3D5D;
+  --meina-color-light: #B94F74;
+}
+
+/* 背景のスタイル */
+.body {
+  background-image: url('./image/background_image.jpg');
+  font-family: ヒラギノ角ゴ ProN W3, HiraKakuProN-W3, Yu Gothic, 游ゴシック, メイリオ, Meiryo, monospace;
+}
+
+/* ロード画面のスタイル */
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #202020;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ロード画面の文字のスタイル */
+.loader p {
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--meina-color-light);
+}
+
+ /* 固定ヘッダーのスタイル */
+.lock-header {
+  background-color: #202020;
+  border-bottom: solid var(--meina-color) 2px;
+  width: 100%;
+  height: 50px;
+  top: 0;
+  left: 0;
+  padding: 6px;
+  padding-left: 24px;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* 関連リンクのスタイル */
+.connection-links {
+  border: solid var(--meina-color-light) 2px;
+  border-radius: 7px;
+  padding: 6px;
+  padding-left: 12px;
+  text-align: start;
+}
+
+/* ヘッダーのスタイル */
+.header {
+  background: #202020;
+  border: solid var(--meina-color) 2px;
+  font-size: 100%;
+  width: 90%;
+  max-width: 700px;
+  border-radius: 10px;
+  margin: auto;
+  left: 0;
+}
+
+/* 行ごとのリンクのスタイル */
+.line-anker {
+  border: solid var(--meina-color-light) 2px;
+  border-radius: 7px;
+  background-color: #202020;
+  color: #FFFFFF;
+  padding: 6px;
+  padding-left: 32px;
+  text-align: start;
+  max-width: 210px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.line-anker div {
+  flex: auto;
+}
+
+/* プロフィールのスタイル */
+.profile {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  flex-wrap: wrap-reverse;
+  gap: 10px;
+  border: solid var(--meina-color) 1px;
+  border-radius: 10px;
+  background: #202020;
+  max-width: 85%;
+  padding: 10px;
+  margin: auto;
+}
+
+/* リンクのカラー */
+.link { color: #68A9FF; }
+
+/* メニューのスタイル */
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0; /* 初期状態は透明 */
+  pointer-events: none; /* クリック不可 */
+  transition: opacity 0.5s ease; /* フェードインのアニメーション */
+  z-index: 5;
+  overflow-y: auto; /* 縦スクロールを有効にする */
+  overscroll-behavior: none; /* スクロールのバウンスを無効にする */
+}
+
+/* メニューが開いたとき */
+.menu.open {
+  opacity: 1; /* 不透明にする */
+  pointer-events: auto; /* クリック可能にする */
+}
+
+/* メニューボタンのスタイル */
+.hamburger {
+  position: fixed;
+  top: 6px;
+  right: 25px;
+  width: 34px;
+  cursor: pointer;
+  z-index: 20;
+  transition: 0.4s;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #FFFFFF;
+  margin: 11px 0;
+  transition: 0.4s;
+}
+
+/* 回転するスタイル */
+.hamburger.active { transform: rotate(90deg); }
+
+/* 行ごとのヘッダーのスタイル */
+.line-header {
+  border-left: solid var(--meina-color-light) 5px;
+  border-radius: 0px 5px 5px 0px;
+  text-align: start;
+  background-color: #ECECEC;
+  color: #000000;
+  max-width: 55px;
+  padding: 3px;
+  font-size: 17px;
+}
+
+/* ボイスボタンのスタイル */
+.sounds {
+  background-color: #000000;
+  border: solid 1px var(--meina-color);
+  color: #FFFFFF;
+  border-radius: 3px;
+  max-height: 23px;
+}
+
+/* ボイスボタンのホバー時のスタイル */
+.sounds:hover {
+  background-color: #2c2c2c;
+  border: solid 1px var(--meina-color-light);
+  color: #FFFFFF;
+  border-radius: 3px;
+  max-height: 23px;
+}
