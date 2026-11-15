@@ -10,26 +10,6 @@ body {
   font-family: ヒラギノ角ゴ ProN W3, HiraKakuProN-W3, Yu Gothic, 游ゴシック, メイリオ, Meiryo, monospace;
 }
 
-/* ロード画面のスタイル */
-.loader {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  background-color: #202020;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/* ロード画面の文字のスタイル */
-.loader p {
-  font-size: 35px;
-  font-weight: bold;
-  color: var(--meina-color-light);
-}
-
  /* 固定ヘッダーのスタイル */
 .lock-header {
   background-color: #202020;
@@ -54,6 +34,11 @@ body {
   padding: 6px;
   padding-left: 12px;
   text-align: start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  order: 3;
 }
 
 /* ヘッダーのスタイル */
@@ -78,7 +63,7 @@ body {
   padding: 6px;
   padding-left: 32px;
   text-align: start;
-  min-width: 220px;
+  min-width: 260px;
   max-height: 180px;
   margin-top: auto;
   margin-bottom: auto;
@@ -94,17 +79,14 @@ body {
 
 /* プロフィールのスタイル */
 .profile {
-  display: inline-flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  align-items: center;
-  align-content: space-around;
-  flex-wrap: wrap-reverse;
-  gap: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
   border: solid var(--meina-color) 1px;
   border-radius: 10px;
   background: #202020;
-  max-width: 85%;
+  max-width: 640px;
   padding: 10px;
   margin: auto;
 }
