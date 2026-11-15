@@ -10,6 +10,7 @@ var syncerSounds = {
 	// 設定
 	var setClass = 'sounds' ;							// ボタン要素のクラス名
 	var setDir = '././sound/' ;									// 音声ファイルがあるフォルダ(最後は[/])
+	var setStopButtonId = 'stop-button' ;			// 停止ボタンに付けるID
 
 	// クラス名が付いた要素を取得する
 	var sounds = document.getElementsByClassName( setClass ) ;
@@ -67,6 +68,13 @@ var syncerSounds = {
 		}
 	}
 
+	// 停止ボタンをクリックした時のイベント
+	document.getElementById( setStopButtonId ).onclick = function()
+	{
+		stopCurrentSound() ;
+		return false ;
+	}
+
 })() ;
 
 $(function() {
@@ -78,16 +86,3 @@ $(function() {
     $(this).toggleClass('active');
   });
 });
-
-// ロード画面の秒数設定
-$(function () {
-  function end_loader() {
-    $('.loader').fadeOut(520); // フェードアウトにかかるミリ秒数
-  }
-  $(window).on('load', function () {
-    setTimeout(function () {
-      end_loader();
-    }, 230) // ロード画面が不透過のミリ秒数
-  })
-})
- 
