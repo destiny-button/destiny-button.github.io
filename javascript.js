@@ -77,6 +77,7 @@ var syncerSounds = {
 
 })() ;
 
+// ハンバーガーボタンの挙動
 $(function() {
   $('.hamburger').click(function() {
     // メニューの開閉状態を切り替える
