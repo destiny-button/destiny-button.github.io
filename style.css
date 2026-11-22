@@ -12,7 +12,7 @@ body {
 
  /* 固定ヘッダーのスタイル */
 .lock-header {
-  background-color: #202020;
+  background-color: #191919;
   border-bottom: solid var(--meina-color) 2px;
   width: 100%;
   height: 37px;
@@ -43,7 +43,7 @@ body {
 
 /* ヘッダーのスタイル */
 .header {
-  background: #202020;
+  background: #191919;
   border: solid var(--meina-color) 2px;
   font-size: 100%;
   width: 90%;
@@ -58,7 +58,7 @@ body {
 .line-anker {
   border: solid var(--meina-color-light) 2px;
   border-radius: 7px;
-  background-color: #202020;
+  background-color: #191919;
   color: #FFFFFF;
   padding: 6px;
   padding-left: 32px;
@@ -85,7 +85,7 @@ body {
   flex-wrap: wrap;
   border: solid var(--meina-color) 1px;
   border-radius: 10px;
-  background: #202020;
+  background: #191919;
   max-width: 640px;
   padding: 10px;
   margin: auto;
@@ -146,10 +146,11 @@ body {
   border-radius: 0px 5px 5px 0px;
   text-align: start;
   background-color: #ECECEC;
-  color: #000000;
+  color: #454545;
   max-width: 55px;
   padding: 3px;
   font-size: 17px;
+  font-weight: 600;
 }
 
 /* ボイスボタンのスタイル */
@@ -164,7 +165,7 @@ body {
 /* ボイスボタンのホバー時のスタイル */
 .sounds:hover {
   background-color: var(--meina-color);
-  border: solid 1px #161616;
+  border: solid 1px #DDDDDD;
   color: #FFFFFF;
   border-radius: 4px;
   max-height: 23px;
