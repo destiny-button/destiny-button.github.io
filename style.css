@@ -2,12 +2,60 @@
 :root {
   --meina-color: #9B3D5D;
   --meina-color-light: #B94F74;
+  --terasu-color: #F06E2D;
+  --lily-color: #B4AFDC;
 }
 
 /* 背景のスタイル */
 body {
   background-image: url('./image/background_image.jpg');
   font-family: ヒラギノ角ゴ ProN W3, HiraKakuProN-W3, Yu Gothic, 游ゴシック, メイリオ, Meiryo, monospace;
+}
+
+/* メニューのスタイル */
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(1px);
+  opacity: 0; /* 初期状態は透明 */
+  pointer-events: none; /* クリック不可 */
+  transition: opacity 0.5s ease; /* フェードインのアニメーション */
+  z-index: 5;
+  overflow-y: auto; /* 縦スクロールを有効にする */
+  overscroll-behavior: none; /* スクロールのバウンスを無効にする */
+}
+
+/* メニューボタンのスタイル */
+.hamburger {
+  position: fixed;
+  top: 1px;
+  right: 25px;
+  width: 32px;
+  cursor: pointer;
+  z-index: 20;
+  transition: 0.4s;
+}
+
+.hamburger span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #FFFFFF;
+  margin: 11px 0;
+  transition: 0.4s;
+}
+
+/* 回転するスタイル */
+.hamburger.active { transform: rotate(90deg); }
+
+/* メニューが開いたとき */
+.menu.open {
+  opacity: 1; /* 不透明にする */
+  pointer-events: auto; /* クリック可能にする */
 }
 
  /* 固定ヘッダーのスタイル */
@@ -39,6 +87,17 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   order: 3;
+}
+
+/* リンクのカラー */
+a:link {
+  color: #68A9FF;
+}
+a:visited {
+  color: var(--lily-color);
+}
+a:active {
+  color: var(--terasu-color);
 }
 
 /* ヘッダーのスタイル */
@@ -91,55 +150,6 @@ body {
   margin: auto;
 }
 
-/* リンクのカラー */
-.link { color: #68A9FF; }
-
-/* メニューのスタイル */
-.menu {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(1px);
-  opacity: 0; /* 初期状態は透明 */
-  pointer-events: none; /* クリック不可 */
-  transition: opacity 0.5s ease; /* フェードインのアニメーション */
-  z-index: 5;
-  overflow-y: auto; /* 縦スクロールを有効にする */
-  overscroll-behavior: none; /* スクロールのバウンスを無効にする */
-}
-
-/* メニューが開いたとき */
-.menu.open {
-  opacity: 1; /* 不透明にする */
-  pointer-events: auto; /* クリック可能にする */
-}
-
-/* メニューボタンのスタイル */
-.hamburger {
-  position: fixed;
-  top: 1px;
-  right: 25px;
-  width: 32px;
-  cursor: pointer;
-  z-index: 20;
-  transition: 0.4s;
-}
-
-.hamburger span {
-  display: block;
-  height: 2px;
-  width: 100%;
-  background-color: #FFFFFF;
-  margin: 11px 0;
-  transition: 0.4s;
-}
-
-/* 回転するスタイル */
-.hamburger.active { transform: rotate(90deg); }
-
 /* 行ごとのヘッダーのスタイル */
 .line-header {
   border-left: solid var(--meina-color-light) 5px;
@@ -165,7 +175,7 @@ body {
 /* ボイスボタンのホバー時のスタイル */
 .sounds:hover {
   background-color: var(--meina-color);
-  border: solid 1px #DDDDDD;
+  border: solid 1px #C8C8C8;
   color: #FFFFFF;
   border-radius: 4px;
   max-height: 23px;
