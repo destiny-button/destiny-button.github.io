@@ -75,6 +75,24 @@ body {
   gap: 20px;
 }
 
+/* 停止ボタンのスタイル */
+.stop {
+  background-color: #000000;
+  border: solid 1px var(--meina-color);
+  color: #FFFFFF;
+  border-radius: 4px;
+  height: 25px;
+}
+
+/* 停止ボタンのホバー時のスタイル */
+.stop:hover {
+  background-color: var(--meina-color);
+  border: solid 1px #C8C8C8;
+  color: #FFFFFF;
+  border-radius: 4px;
+  height: 25px;
+}
+
 /* 関連リンクのスタイル */
 .connection-links {
   border: solid var(--meina-color-light) 2px;
