@@ -93,20 +93,6 @@ body {
   height: 25px;
 }
 
-/* 関連リンクのスタイル */
-.connection-links {
-  border: solid var(--meina-color-light) 2px;
-  border-radius: 7px;
-  padding: 6px;
-  padding-left: 12px;
-  text-align: start;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  order: 3;
-}
-
 /* リンクのカラー */
 a:link {
   color: #68A9FF;
@@ -124,7 +110,7 @@ a:active {
   border: solid var(--meina-color) 2px;
   font-size: 100%;
   width: 90%;
-  max-width: 700px;
+  max-width: 730px;
   border-radius: 10px;
   margin: 50px;
   left: 0;
@@ -160,12 +146,26 @@ a:active {
   justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
-  border: solid var(--meina-color) 1px;
+  border: solid var(--meina-color) 2px;
   border-radius: 10px;
   background: #191919;
   max-width: 640px;
   padding: 10px;
   margin: auto;
+}
+
+/* 関連リンクのスタイル */
+.connection-links {
+  border: solid var(--meina-color-light) 1px;
+  border-radius: 7px;
+  padding: 6px;
+  padding-left: 12px;
+  text-align: start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  order: 3;
 }
 
 /* 行ごとのヘッダーのスタイル */
@@ -187,7 +187,7 @@ a:active {
   border: solid 1px var(--meina-color);
   color: #FFFFFF;
   border-radius: 4px;
-  height: 23px;
+  height: 21px;
 }
 
 /* ボイスボタンのホバー時のスタイル */
@@ -196,5 +196,5 @@ a:active {
   border: solid 1px #C8C8C8;
   color: #FFFFFF;
   border-radius: 4px;
-  height: 23px;
+  height: 21px;
 }
