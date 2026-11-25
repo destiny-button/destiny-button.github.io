@@ -75,24 +75,6 @@ body {
   gap: 20px;
 }
 
-/* 停止ボタンのスタイル */
-.stop {
-  background-color: #000000;
-  border: solid 1px var(--meina-color);
-  color: #FFFFFF;
-  border-radius: 4px;
-  height: 25px;
-}
-
-/* 停止ボタンのホバー時のスタイル */
-.stop:hover {
-  background-color: var(--meina-color);
-  border: solid 1px #C8C8C8;
-  color: #FFFFFF;
-  border-radius: 4px;
-  height: 25px;
-}
-
 /* リンクのカラー */
 a:link {
   color: #68A9FF;
@@ -109,7 +91,7 @@ a:active {
   background: #191919;
   border: solid var(--meina-color) 2px;
   font-size: 100%;
-  width: 90%;
+  width: 95%;
   max-width: 730px;
   border-radius: 10px;
   margin: 50px;
@@ -187,7 +169,7 @@ a:active {
   border: solid 1px var(--meina-color);
   color: #FFFFFF;
   border-radius: 4px;
-  height: 21px;
+  height: 1.7em;
 }
 
 /* ボイスボタンのホバー時のスタイル */
@@ -196,5 +178,5 @@ a:active {
   border: solid 1px #C8C8C8;
   color: #FFFFFF;
   border-radius: 4px;
-  height: 21px;
+  height: 1.7em;
 }
