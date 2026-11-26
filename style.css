@@ -183,21 +183,11 @@ a:active {
 }
 
 /* iOS26safari対応用 */
-.for-status-bars {
-  position: fixed;
-  top: 0;
-  pointer-events: none;
-  height: 5px;
-  width: 100%;
-  background-color: #000;
-  mix-blend-mode: lighten;
-}
-
 .for-tab-bars {
   position: fixed;
   bottom: 0;
   pointer-events: none;
-  height: 4px;
+  height: 100%;
   width: 100%;
   background-color: #000;
   mix-blend-mode: lighten;
