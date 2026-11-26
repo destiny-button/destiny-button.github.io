@@ -9,7 +9,9 @@
 /* 背景のスタイル */
 body {
   background-image: url('./image/background_image.jpg');
-  background-color: #191919;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: darken;
+  mix-blend-mode: lighten;
   font-family: ヒラギノ角ゴ ProN W3, HiraKakuProN-W3, Yu Gothic, 游ゴシック, メイリオ, Meiryo, monospace;
 }
 
